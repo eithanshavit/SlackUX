@@ -16,6 +16,7 @@ class ViewController: UIViewController {
   private var collectionViewDataSource: CollectionViewDataSource!
   private var cellSizeCache = NSCache()
   private var tuckMenuLocked = false
+  private var tuckMenuBlinked = false
   
   private var menuHeight: CGFloat {
     return tuckMenu.bounds.height
@@ -76,7 +77,16 @@ extension ViewController: UIScrollViewDelegate {
   }
   
   func scrollViewdidScrollToOffsetFromBottom(offset: CGFloat) {
-    tuckMenuLocked = offset > menuHeight
+    tuckMenuLocked = offset >= menuHeight
+    if tuckMenuLocked {
+      if !tuckMenuBlinked {
+        tuckMenu.blink()
+        tuckMenuBlinked = true
+      }
+    }
+    else {
+      tuckMenuBlinked = false
+    }
     tuckMenu.setRevealedArea(CGSize(width: tuckMenu.bounds.width, height: offset))
   }
   
@@ -88,21 +98,18 @@ extension ViewController: UIScrollViewDelegate {
   @objc
   private func handlePan(recognizer: UIPanGestureRecognizer) {
     if recognizer.state == .Ended {
-      let triggeringValue = menuHeight
-      let velocity = recognizer.velocityInView(collectionView).y
-      
-      if scrollViewBottomOffset > triggeringValue {
-        UIView.animateWithDuration(
-          0.2,
-          delay: 0,
-          options: UIViewAnimationOptions.BeginFromCurrentState | UIViewAnimationOptions.CurveEaseInOut,
-          animations: {
-            finished in
-              self.collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: self.menuHeight, right: 0)
-              //self.collectionView.contentOffset.y = -self.scrollView.contentInset.top
-          },
-          completion: nil
-      )}
+      //let velocity = recognizer.velocityInView(collectionView).y
+      let insetButtom = tuckMenuLocked ? menuHeight : 0
+      UIView.animateWithDuration(
+        0.2,
+        delay: 0,
+        options: UIViewAnimationOptions.BeginFromCurrentState | UIViewAnimationOptions.CurveEaseInOut,
+        animations: {
+          finished in
+            self.collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: insetButtom, right: 0)
+        },
+        completion: nil
+      )
     }
   }
   

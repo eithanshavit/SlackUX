@@ -12,13 +12,39 @@ class TuckMenu: IBReusableView {
   
   @IBOutlet weak var buttonContainer: UIView!
   
+  @IBOutlet weak var hashButton: UIButton!
+  @IBOutlet weak var chatButton: UIButton!
+  @IBOutlet weak var searchButton: UIButton!
+  @IBOutlet weak var groupButton: UIButton!
+  
+  @IBOutlet weak var searchButtonCenterOffset: NSLayoutConstraint!
+  @IBOutlet weak var groupButtonCenterOffset: NSLayoutConstraint!
+  @IBOutlet weak var chatButtonCenterOffset: NSLayoutConstraint!
+  @IBOutlet weak var hashButtonCenterOffset: NSLayoutConstraint!
+  
   required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder, xib: "TuckMenu")
   }
   
   func setRevealedArea(area: CGSize) {
-    baseView.backgroundColor = colorForPercentage(revealedHeightPercentage(area))
+    let revealedPercentage = revealedHeightPercentage(area)
+    let buttons: [(UIButton, NSLayoutConstraint, CGFloat)] = [
+      (hashButton, hashButtonCenterOffset, 0.7),
+      (chatButton, chatButtonCenterOffset, 0.8),
+      (groupButton, groupButtonCenterOffset, 0.9),
+      (searchButton, searchButtonCenterOffset, 1),
+    ]
+    for (button, constraint, threshold) in buttons {
+      let relativeRevealedPercentage = min(1, revealedPercentage / threshold)
+      button.transform = CGAffineTransformMakeScale(relativeRevealedPercentage * 0.5 + 0.5, relativeRevealedPercentage * 0.5 + 0.5)
+      button.alpha = revealedPercentage * 0.7 + 0.3
+      constraint.constant = 50 * (1 - relativeRevealedPercentage)
+    }
   }
+  
+  func blink() {
+  }
+  
   
   func revealedHeightPercentage(area: CGSize) -> CGFloat {
     return min(area.height / bounds.height, 1)
