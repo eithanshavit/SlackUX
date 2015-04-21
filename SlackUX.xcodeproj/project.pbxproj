@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D034FC8F1AE5B1C500B3EDD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FC8E1AE5B1C500B3EDD2 /* AppDelegate.swift */; };
-		D034FC911AE5B1C500B3EDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FC901AE5B1C500B3EDD2 /* ViewController.swift */; };
 		D034FC941AE5B1C500B3EDD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D034FC921AE5B1C500B3EDD2 /* Main.storyboard */; };
 		D034FC961AE5B1C500B3EDD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D034FC951AE5B1C500B3EDD2 /* Images.xcassets */; };
 		D034FC991AE5B1C500B3EDD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FC971AE5B1C500B3EDD2 /* LaunchScreen.xib */; };
 		D034FCA51AE5B1C600B3EDD2 /* SlackUXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCA41AE5B1C600B3EDD2 /* SlackUXTests.swift */; };
+		D034FCB21AE5B67B00B3EDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCB11AE5B67B00B3EDD2 /* ViewController.swift */; };
+		D034FCB51AE5B6AE00B3EDD2 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FCB41AE5B6AE00B3EDD2 /* TextCell.xib */; };
+		D034FCB81AE5BB6200B3EDD2 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCB61AE5BB6200B3EDD2 /* TextCell.swift */; };
+		D034FCC21AE5BBF200B3EDD2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCBF1AE5BBF200B3EDD2 /* Message.swift */; };
+		D034FCC31AE5BBF200B3EDD2 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCC11AE5BBF200B3EDD2 /* CollectionViewDataSource.swift */; };
+		D034FCC51AE5BC8100B3EDD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCC41AE5BC8100B3EDD2 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +34,18 @@
 		D034FC891AE5B1C500B3EDD2 /* SlackUX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackUX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D034FC8D1AE5B1C500B3EDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D034FC8E1AE5B1C500B3EDD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D034FC901AE5B1C500B3EDD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D034FC931AE5B1C500B3EDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D034FC951AE5B1C500B3EDD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D034FC981AE5B1C500B3EDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D034FC9E1AE5B1C600B3EDD2 /* SlackUXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackUXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D034FCA31AE5B1C600B3EDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D034FCA41AE5B1C600B3EDD2 /* SlackUXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUXTests.swift; sourceTree = "<group>"; };
+		D034FCB11AE5B67B00B3EDD2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		D034FCB41AE5B6AE00B3EDD2 /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextCell.xib; path = SlackUX/Views/TextCell.xib; sourceTree = "<group>"; };
+		D034FCB61AE5BB6200B3EDD2 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextCell.swift; path = SlackUX/Views/TextCell.swift; sourceTree = "<group>"; };
+		D034FCBF1AE5BBF200B3EDD2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D034FCC11AE5BBF200B3EDD2 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		D034FCC41AE5BC8100B3EDD2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,11 @@
 		D034FC8B1AE5B1C500B3EDD2 /* SlackUX */ = {
 			isa = PBXGroup;
 			children = (
+				D034FCBE1AE5BBF200B3EDD2 /* Models */,
+				D034FCC01AE5BBF200B3EDD2 /* Objects */,
+				D034FCAE1AE5B63A00B3EDD2 /* Views */,
 				D034FC8E1AE5B1C500B3EDD2 /* AppDelegate.swift */,
-				D034FC901AE5B1C500B3EDD2 /* ViewController.swift */,
+				D034FCB31AE5B67F00B3EDD2 /* Controllers */,
 				D034FC921AE5B1C500B3EDD2 /* Main.storyboard */,
 				D034FC951AE5B1C500B3EDD2 /* Images.xcassets */,
 				D034FC971AE5B1C500B3EDD2 /* LaunchScreen.xib */,
@@ -110,6 +123,41 @@
 				D034FCA31AE5B1C600B3EDD2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D034FCAE1AE5B63A00B3EDD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D034FCB41AE5B6AE00B3EDD2 /* TextCell.xib */,
+				D034FCB61AE5BB6200B3EDD2 /* TextCell.swift */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D034FCB31AE5B67F00B3EDD2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D034FCB11AE5B67B00B3EDD2 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D034FCBE1AE5BBF200B3EDD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D034FCBF1AE5BBF200B3EDD2 /* Message.swift */,
+				D034FCC41AE5BC8100B3EDD2 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D034FCC01AE5BBF200B3EDD2 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D034FCC11AE5BBF200B3EDD2 /* CollectionViewDataSource.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +243,7 @@
 				D034FC941AE5B1C500B3EDD2 /* Main.storyboard in Resources */,
 				D034FC991AE5B1C500B3EDD2 /* LaunchScreen.xib in Resources */,
 				D034FC961AE5B1C500B3EDD2 /* Images.xcassets in Resources */,
+				D034FCB51AE5B6AE00B3EDD2 /* TextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D034FC911AE5B1C500B3EDD2 /* ViewController.swift in Sources */,
+				D034FCC31AE5BBF200B3EDD2 /* CollectionViewDataSource.swift in Sources */,
+				D034FCC51AE5BC8100B3EDD2 /* User.swift in Sources */,
+				D034FCB21AE5B67B00B3EDD2 /* ViewController.swift in Sources */,
+				D034FCB81AE5BB6200B3EDD2 /* TextCell.swift in Sources */,
+				D034FCC21AE5BBF200B3EDD2 /* Message.swift in Sources */,
 				D034FC8F1AE5B1C500B3EDD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
