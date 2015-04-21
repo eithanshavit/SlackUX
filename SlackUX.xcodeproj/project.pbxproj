@@ -18,6 +18,9 @@
 		D034FCC21AE5BBF200B3EDD2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCBF1AE5BBF200B3EDD2 /* Message.swift */; };
 		D034FCC31AE5BBF200B3EDD2 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCC11AE5BBF200B3EDD2 /* CollectionViewDataSource.swift */; };
 		D034FCC51AE5BC8100B3EDD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCC41AE5BC8100B3EDD2 /* User.swift */; };
+		D034FCCB1AE60A1A00B3EDD2 /* TuckMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCCA1AE60A1A00B3EDD2 /* TuckMenu.swift */; };
+		D034FCCD1AE60EE900B3EDD2 /* IBReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */; };
+		D034FCCF1AE60F9200B3EDD2 /* TuckMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		D034FCBF1AE5BBF200B3EDD2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D034FCC11AE5BBF200B3EDD2 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		D034FCC41AE5BC8100B3EDD2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D034FCCA1AE60A1A00B3EDD2 /* TuckMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuckMenu.swift; path = SlackUX/Views/TuckMenu.swift; sourceTree = "<group>"; };
+		D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBReusableView.swift; path = SlackUX/Views/IBReusableView.swift; sourceTree = "<group>"; };
+		D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TuckMenu.xib; path = SlackUX/Views/TuckMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 		D034FC801AE5B1C500B3EDD2 = {
 			isa = PBXGroup;
 			children = (
+				D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */,
+				D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */,
 				D034FC8B1AE5B1C500B3EDD2 /* SlackUX */,
 				D034FCA11AE5B1C600B3EDD2 /* SlackUXTests */,
 				D034FC8A1AE5B1C500B3EDD2 /* Products */,
@@ -130,6 +138,7 @@
 			children = (
 				D034FCB41AE5B6AE00B3EDD2 /* TextCell.xib */,
 				D034FCB61AE5BB6200B3EDD2 /* TextCell.swift */,
+				D034FCCA1AE60A1A00B3EDD2 /* TuckMenu.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -243,6 +252,7 @@
 				D034FC941AE5B1C500B3EDD2 /* Main.storyboard in Resources */,
 				D034FC991AE5B1C500B3EDD2 /* LaunchScreen.xib in Resources */,
 				D034FC961AE5B1C500B3EDD2 /* Images.xcassets in Resources */,
+				D034FCCF1AE60F9200B3EDD2 /* TuckMenu.xib in Resources */,
 				D034FCB51AE5B6AE00B3EDD2 /* TextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D034FCCD1AE60EE900B3EDD2 /* IBReusableView.swift in Sources */,
 				D034FCC31AE5BBF200B3EDD2 /* CollectionViewDataSource.swift in Sources */,
 				D034FCC51AE5BC8100B3EDD2 /* User.swift in Sources */,
 				D034FCB21AE5B67B00B3EDD2 /* ViewController.swift in Sources */,
+				D034FCCB1AE60A1A00B3EDD2 /* TuckMenu.swift in Sources */,
 				D034FCB81AE5BB6200B3EDD2 /* TextCell.swift in Sources */,
 				D034FCC21AE5BBF200B3EDD2 /* Message.swift in Sources */,
 				D034FC8F1AE5B1C500B3EDD2 /* AppDelegate.swift in Sources */,

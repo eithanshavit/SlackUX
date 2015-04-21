@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TuckMenu" customModule="SlackUX" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonContainer" destination="2bs-Ok-fbr" id="NEl-Mp-hfX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bs-Ok-fbr" userLabel="buttonContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="437" height="143"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL4-GU-EZH" userLabel="hashButton">
+                            <rect key="frame" x="46" y="36" width="72" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="EL4-GU-EZH" secondAttribute="height" multiplier="1:1" id="GeX-wp-QFD"/>
+                            </constraints>
+                            <state key="normal" image="hash_button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yno-61-Hgc" userLabel="chatButton">
+                            <rect key="frame" x="138" y="36" width="71" height="72"/>
+                            <state key="normal" image="chat_button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEP-J4-Pe8" userLabel="searchButton">
+                            <rect key="frame" x="321" y="36" width="71" height="72"/>
+                            <state key="normal" image="search_button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIz-Ce-SnH" userLabel="groupButton">
+                            <rect key="frame" x="231" y="43" width="57" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zIz-Ce-SnH" secondAttribute="height" multiplier="1:1" id="iqB-El-Ox1"/>
+                            </constraints>
+                            <state key="normal" image="group_button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kEP-J4-Pe8" firstAttribute="leading" secondItem="zIz-Ce-SnH" secondAttribute="trailing" constant="24" id="5He-wg-Wt7"/>
+                        <constraint firstItem="yno-61-Hgc" firstAttribute="width" secondItem="yno-61-Hgc" secondAttribute="height" multiplier="1:1" id="5jl-Oc-i2w"/>
+                        <constraint firstItem="zIz-Ce-SnH" firstAttribute="height" secondItem="EL4-GU-EZH" secondAttribute="height" id="5w1-C6-DZL"/>
+                        <constraint firstAttribute="centerY" secondItem="EL4-GU-EZH" secondAttribute="centerY" id="9vh-52-cIO"/>
+                        <constraint firstItem="EL4-GU-EZH" firstAttribute="trailing" secondItem="yno-61-Hgc" secondAttribute="leading" constant="-24" id="B08-yz-fHo"/>
+                        <constraint firstAttribute="centerY" secondItem="yno-61-Hgc" secondAttribute="centerY" id="G9x-Vf-5fo"/>
+                        <constraint firstItem="EL4-GU-EZH" firstAttribute="height" secondItem="yno-61-Hgc" secondAttribute="height" id="Imy-om-jMH"/>
+                        <constraint firstAttribute="centerY" secondItem="zIz-Ce-SnH" secondAttribute="centerY" id="RIe-mK-qjd"/>
+                        <constraint firstItem="EL4-GU-EZH" firstAttribute="width" secondItem="yno-61-Hgc" secondAttribute="width" id="WtK-18-8NF"/>
+                        <constraint firstItem="kEP-J4-Pe8" firstAttribute="height" secondItem="EL4-GU-EZH" secondAttribute="height" id="ZbZ-nq-w6K"/>
+                        <constraint firstAttribute="centerY" secondItem="kEP-J4-Pe8" secondAttribute="centerY" id="aXj-Xi-rhe"/>
+                        <constraint firstItem="kEP-J4-Pe8" firstAttribute="width" secondItem="EL4-GU-EZH" secondAttribute="width" id="fwr-f2-Mka"/>
+                        <constraint firstItem="zIz-Ce-SnH" firstAttribute="width" secondItem="EL4-GU-EZH" secondAttribute="width" id="ouD-Hw-dvB"/>
+                        <constraint firstItem="zIz-Ce-SnH" firstAttribute="leading" secondItem="2bs-Ok-fbr" secondAttribute="centerX" constant="12" id="tIr-jN-9xj"/>
+                        <constraint firstItem="kEP-J4-Pe8" firstAttribute="width" secondItem="kEP-J4-Pe8" secondAttribute="height" multiplier="1:1" id="tea-St-6m6"/>
+                        <constraint firstItem="EL4-GU-EZH" firstAttribute="height" secondItem="2bs-Ok-fbr" secondAttribute="height" multiplier="0.4" id="tj0-20-0fI"/>
+                        <constraint firstItem="yno-61-Hgc" firstAttribute="trailing" secondItem="2bs-Ok-fbr" secondAttribute="centerX" constant="-12" id="u4M-5S-WOe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.162137686" green="1" blue="0.52167651169999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2bs-Ok-fbr" secondAttribute="trailing" id="EkU-CX-wFe"/>
+                <constraint firstItem="2bs-Ok-fbr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cyU-gX-B1O"/>
+                <constraint firstItem="2bs-Ok-fbr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mzE-6a-uM2"/>
+                <constraint firstAttribute="bottom" secondItem="2bs-Ok-fbr" secondAttribute="bottom" id="x83-0l-t4z"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="678.5" y="281.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_button" width="200" height="200"/>
+        <image name="group_button" width="201" height="201"/>
+        <image name="hash_button" width="200" height="200"/>
+        <image name="search_button" width="200" height="200"/>
+    </resources>
+</document>
