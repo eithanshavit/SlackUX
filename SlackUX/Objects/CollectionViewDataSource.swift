@@ -17,36 +17,23 @@ class CollectionViewDataSource: NSObject {
   init(collectionView: UICollectionView) {
     self.collectionView = collectionView
     
-    // Some dummy data
-    let texts = [
-      "in the parking lot this new fallen snow- much of it Reserved",
-      "the scent of spring each time you're passing by - midwinter's daydream",
-      "A mocking bird sings Moonlight silvers cat whiskers Dozing, she listens",
-      "outside the deer park along the chainlink fence deer tracks in the snow",
-      "outside the deer park along the chainlink fence deer tracks in the snow outside the deer park along the chainlink fence deer tracks in the snow",
-      "A mocking bird sings Moonlight silvers cat whiskers Dozing, she listens",
-      "outside the deer park along the chainlink fence deer tracks in the snow",
-      "outside the deer park along the chainlink fence deer tracks in the snow outside the deer park along the chainlink fence deer tracks in the snow",
+    let vincent = User(name: "vincent", photo: UIImage(named: "vega")!)
+    let jules = User(name: "jules", photo: UIImage(named: "jules")!)
+    
+    let texts: [(String, User)] = [
+      ("And you know what they call a... a... a Quarter Pounder with Cheese in Paris?", vincent),
+      ("They don't call it a Quarter Pounder with cheese?", jules),
+      ("No man, they got the metric system. They wouldn't know what the fuck a Quarter Pounder is.", vincent),
+      ("Then what do they call it?", jules),
+      ("They call it a Royale with cheese", vincent),
+      ("A Royale with cheese. What do they call a Big Mac?", jules),
+      ("Well, a Big Mac's a Big Mac, but they call it le Big-Mac", vincent),
+      ("Le Big-Mac. Ha ha ha ha. What do they call a Whopper?", jules),
+      ("I dunno, I didn't go into Burger King", vincent),
     ]
     
-    let users = [
-      User(name: "luke", photo: UIImage(named: "luke")!),
-      User(name: "vader", photo: UIImage(named: "vader")!),
-      User(name: "obi", photo: UIImage(named: "obi")!)
-    ]
-    
-    func getRandomColor() -> UIColor {
-      let colors = [
-        UIColor(red:0.4, green:0.23, blue:0.72, alpha:1.0),
-        UIColor(red:0.01, green:0.53, blue:0.82, alpha:1.0),
-        UIColor(red:0.01, green:0.66, blue:0.96, alpha:1.0),
-        UIColor(red:0.27, green:0.54, blue:1.0, alpha:1.0)
-      ]
-      return colors[Int(arc4random_uniform(UInt32(colors.count)))]
-    }
-
-    for (i, text) in enumerate(texts) {
-      data.append(Message(text: text, user: users[Int(arc4random_uniform(UInt32(users.count)))], date: NSDate()))
+    for (text, user) in texts {
+      data.append(Message(text: text, user: user, date: NSDate()))
     }
   }
   
