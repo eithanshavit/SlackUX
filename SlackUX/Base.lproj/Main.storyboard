@@ -17,21 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSv-4f-Ngn" userLabel="Toolbar">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="bgS-lN-P14" userLabel="headerImageView">
+                                <rect key="frame" x="-1" y="0.0" width="376" height="64"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSv-4f-Ngn" userLabel="Toolbar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="AuK-Rx-CE5"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtZ-Q3-fSr" userLabel="tuckMenu" customClass="TuckMenu" customModule="SlackUX" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="543" width="375" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.84313725490000002" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="akl-b2-uN9"/>
-                                </constraints>
-                            </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="02f-oV-Dfa" userLabel="collectionView">
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" canCancelContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="02f-oV-Dfa" userLabel="collectionView">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aGD-fh-lo1">
@@ -51,16 +47,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="bgS-lN-P14" firstAttribute="centerX" secondItem="XSv-4f-Ngn" secondAttribute="centerX" id="5UB-vL-Dmw"/>
                             <constraint firstAttribute="trailing" secondItem="Dr4-cw-Kg6" secondAttribute="trailing" id="7ux-df-8be"/>
                             <constraint firstAttribute="trailing" secondItem="02f-oV-Dfa" secondAttribute="trailing" id="8CJ-gN-Lt0"/>
                             <constraint firstItem="02f-oV-Dfa" firstAttribute="top" secondItem="XSv-4f-Ngn" secondAttribute="bottom" id="ClZ-Eu-O9r"/>
-                            <constraint firstAttribute="centerX" secondItem="EtZ-Q3-fSr" secondAttribute="centerX" id="Ked-Ra-xOj"/>
                             <constraint firstItem="Dr4-cw-Kg6" firstAttribute="top" secondItem="02f-oV-Dfa" secondAttribute="bottom" id="MYS-Ay-iSK"/>
                             <constraint firstItem="XSv-4f-Ngn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="NJ2-Vz-UsY"/>
+                            <constraint firstItem="bgS-lN-P14" firstAttribute="width" secondItem="XSv-4f-Ngn" secondAttribute="width" id="OJt-pL-O08"/>
                             <constraint firstItem="Dr4-cw-Kg6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="T5K-Jd-NAv"/>
-                            <constraint firstItem="EtZ-Q3-fSr" firstAttribute="bottom" secondItem="02f-oV-Dfa" secondAttribute="bottom" id="hla-7r-Bmr"/>
+                            <constraint firstItem="bgS-lN-P14" firstAttribute="height" secondItem="XSv-4f-Ngn" secondAttribute="height" id="Tlb-Te-UgH"/>
+                            <constraint firstItem="bgS-lN-P14" firstAttribute="centerY" secondItem="XSv-4f-Ngn" secondAttribute="centerY" id="bg3-37-Yj9"/>
                             <constraint firstItem="XSv-4f-Ngn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jUG-a1-gT9"/>
-                            <constraint firstItem="EtZ-Q3-fSr" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="nr3-60-bt5"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Dr4-cw-Kg6" secondAttribute="bottom" id="pok-kt-TiR"/>
                             <constraint firstAttribute="trailing" secondItem="XSv-4f-Ngn" secondAttribute="trailing" id="sKQ-Zt-7pq"/>
                             <constraint firstItem="02f-oV-Dfa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="tMl-VO-Y1w"/>
@@ -69,7 +66,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="02f-oV-Dfa" id="Vmw-8G-E5y"/>
-                        <outlet property="tuckMenu" destination="EtZ-Q3-fSr" id="XdN-ar-XJ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -78,5 +74,6 @@
     </scenes>
     <resources>
         <image name="InputBar" width="750" height="89"/>
+        <image name="header" width="750" height="128"/>
     </resources>
 </document>

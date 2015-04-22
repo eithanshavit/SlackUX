@@ -22,8 +22,8 @@ class TuckMenu: IBReusableView {
   @IBOutlet weak var chatButtonCenterOffset: NSLayoutConstraint!
   @IBOutlet weak var hashButtonCenterOffset: NSLayoutConstraint!
   
-  required init(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder, xib: "TuckMenu")
+  convenience init() {
+    self.init(frame: CGRectZero, xib: "TuckMenu")
   }
   
   func setRevealedArea(area: CGSize) {
@@ -36,8 +36,8 @@ class TuckMenu: IBReusableView {
     ]
     for (button, constraint, threshold) in buttons {
       let relativeRevealedPercentage = min(1, revealedPercentage / threshold)
-      button.transform = CGAffineTransformMakeScale(relativeRevealedPercentage * 0.5 + 0.5, relativeRevealedPercentage * 0.5 + 0.5)
-      button.alpha = revealedPercentage * 0.7 + 0.3
+      button.transform = CGAffineTransformMakeScale(relativeRevealedPercentage * 0.7 + 0.3, relativeRevealedPercentage * 0.7 + 0.3)
+      button.alpha = revealedPercentage * 0.8 + 0.2
       constraint.constant = 50 * (1 - relativeRevealedPercentage)
     }
   }

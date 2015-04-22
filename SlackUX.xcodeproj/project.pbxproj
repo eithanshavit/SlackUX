@@ -21,6 +21,7 @@
 		D034FCCB1AE60A1A00B3EDD2 /* TuckMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCCA1AE60A1A00B3EDD2 /* TuckMenu.swift */; };
 		D034FCCD1AE60EE900B3EDD2 /* IBReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */; };
 		D034FCCF1AE60F9200B3EDD2 /* TuckMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */; };
+		D0DE389E1AE71D0000990BDB /* TuckMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		D034FCCA1AE60A1A00B3EDD2 /* TuckMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuckMenu.swift; path = SlackUX/Views/TuckMenu.swift; sourceTree = "<group>"; };
 		D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBReusableView.swift; path = SlackUX/Views/IBReusableView.swift; sourceTree = "<group>"; };
 		D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TuckMenu.xib; path = SlackUX/Views/TuckMenu.xib; sourceTree = "<group>"; };
+		D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuckMenuButton.swift; path = SlackUX/Views/TuckMenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */,
-				D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */,
 				D034FC8B1AE5B1C500B3EDD2 /* SlackUX */,
 				D034FCA11AE5B1C600B3EDD2 /* SlackUXTests */,
 				D034FC8A1AE5B1C500B3EDD2 /* Products */,
@@ -136,9 +137,11 @@
 		D034FCAE1AE5B63A00B3EDD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */,
 				D034FCB41AE5B6AE00B3EDD2 /* TextCell.xib */,
 				D034FCB61AE5BB6200B3EDD2 /* TextCell.swift */,
 				D034FCCA1AE60A1A00B3EDD2 /* TuckMenu.swift */,
+				D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -280,6 +283,7 @@
 				D034FCB81AE5BB6200B3EDD2 /* TextCell.swift in Sources */,
 				D034FCC21AE5BBF200B3EDD2 /* Message.swift in Sources */,
 				D034FC8F1AE5B1C500B3EDD2 /* AppDelegate.swift in Sources */,
+				D0DE389E1AE71D0000990BDB /* TuckMenuButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

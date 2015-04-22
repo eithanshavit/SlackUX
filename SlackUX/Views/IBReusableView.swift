@@ -16,8 +16,17 @@ class IBReusableView: UIView {
   
   init(coder aDecoder: NSCoder, xib aXib: String) {
     super.init(coder: aDecoder)
+    setup(aXib)
+  }
+  
+  init(frame: CGRect, xib aXib: String) {
+    super.init(frame: frame)
+    setup(aXib)
+  }
+  
+  func setup(xib: String) {
     // Load the NIB
-    baseView = NSBundle.mainBundle().loadNibNamed(aXib, owner: self, options: nil)[0] as! UIView
+    baseView = NSBundle.mainBundle().loadNibNamed(xib, owner: self, options: nil)[0] as! UIView
     baseView.setTranslatesAutoresizingMaskIntoConstraints(false)
     addSubview(baseView)
     // Set constrains to match size given by parent's constrains

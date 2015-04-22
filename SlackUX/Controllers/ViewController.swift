@@ -11,16 +11,19 @@ import UIKit
 class ViewController: UIViewController {
   
   @IBOutlet weak var collectionView: UICollectionView!
-  @IBOutlet weak var tuckMenu: TuckMenu!
   
   private var collectionViewDataSource: CollectionViewDataSource!
   private var cellSizeCache = NSCache()
   private var tuckMenuLocked = false
   private var tuckMenuBlinked = false
   
+  var tuckMenu = TuckMenu()
+  var collectionBackgroundView = UIView()
+  
   private var menuHeight: CGFloat {
     return tuckMenu.bounds.height
   }
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -32,6 +35,10 @@ class ViewController: UIViewController {
     collectionView.delegate = self
     collectionView.dataSource = collectionViewDataSource
     collectionView.panGestureRecognizer.addTarget(self, action: "handlePan:")
+    
+    collectionBackgroundView.backgroundColor = UIColor.whiteColor()
+    collectionView.backgroundView = collectionBackgroundView
+    collectionBackgroundView.addSubview(tuckMenu)
   }
   
   override func didReceiveMemoryWarning() {
@@ -41,6 +48,7 @@ class ViewController: UIViewController {
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
+    tuckMenu.frame = CGRect(x: 0, y: collectionBackgroundView.bounds.height - 70 , width: collectionBackgroundView.bounds.width, height: 70)
   }
   
 }

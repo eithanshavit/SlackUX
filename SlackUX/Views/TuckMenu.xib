@@ -28,35 +28,61 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bs-Ok-fbr" userLabel="buttonContainer">
                     <rect key="frame" x="0.0" y="0.0" width="437" height="114"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL4-GU-EZH" userLabel="hashButton">
-                            <rect key="frame" x="93" y="35" width="45" height="45"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL4-GU-EZH" userLabel="hashButton" customClass="TuckMenuButton" customModule="SlackUX" customModuleProvider="target">
+                            <rect key="frame" x="92" y="35" width="45" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="EL4-GU-EZH" secondAttribute="height" multiplier="1:1" id="GeX-wp-QFD"/>
                             </constraints>
                             <state key="normal" image="hash_button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                    <color key="value" red="0.80784313725490198" green="0.0" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yno-61-Hgc" userLabel="chatButton">
-                            <rect key="frame" x="162" y="35" width="45" height="45"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yno-61-Hgc" userLabel="chatButton" customClass="TuckMenuButton" customModule="SlackUX" customModuleProvider="target">
+                            <rect key="frame" x="161" y="35" width="46" height="45"/>
                             <state key="normal" image="chat_button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                    <color key="value" red="0.29411764705882354" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEP-J4-Pe8" userLabel="searchButton">
-                            <rect key="frame" x="300" y="35" width="45" height="45"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEP-J4-Pe8" userLabel="searchButton" customClass="TuckMenuButton" customModule="SlackUX" customModuleProvider="target">
+                            <rect key="frame" x="301" y="35" width="45" height="45"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" none="YES"/>
+                            </accessibility>
                             <state key="normal" image="search_button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                    <color key="value" red="0.23137254901960785" green="0.63529411764705879" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIz-Ce-SnH" userLabel="groupButton">
-                            <rect key="frame" x="231" y="35" width="45" height="45"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIz-Ce-SnH" userLabel="groupButton" customClass="TuckMenuButton" customModule="SlackUX" customModuleProvider="target">
+                            <rect key="frame" x="231" y="35" width="46" height="45"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" none="YES"/>
+                            </accessibility>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="zIz-Ce-SnH" secondAttribute="height" multiplier="1:1" id="iqB-El-Ox1"/>
                             </constraints>
                             <state key="normal" image="group_button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                    <color key="value" red="0.85490196078431369" green="0.53333333333333333" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
