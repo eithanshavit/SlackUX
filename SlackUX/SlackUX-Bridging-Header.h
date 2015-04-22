@@ -9,5 +9,8 @@
 #ifndef SlackUX_SlackUX_Bridging_Header_h
 #define SlackUX_SlackUX_Bridging_Header_h
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "DTCollectionViewManager/DTCollectionViewManager.h"
 
 #endif

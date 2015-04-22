@@ -1,0 +1,1 @@
+../../../DTCollectionViewManager/DTCollectionViewManager/DTCollectionViewController.h

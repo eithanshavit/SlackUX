@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C040D63A438906FDDF4D4A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EB7DC3A3FB88FA952E82E7 /* libPods.a */; };
 		D034FC8F1AE5B1C500B3EDD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FC8E1AE5B1C500B3EDD2 /* AppDelegate.swift */; };
 		D034FC941AE5B1C500B3EDD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D034FC921AE5B1C500B3EDD2 /* Main.storyboard */; };
 		D034FC961AE5B1C500B3EDD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D034FC951AE5B1C500B3EDD2 /* Images.xcassets */; };
 		D034FC991AE5B1C500B3EDD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FC971AE5B1C500B3EDD2 /* LaunchScreen.xib */; };
-		D034FCA51AE5B1C600B3EDD2 /* SlackUXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCA41AE5B1C600B3EDD2 /* SlackUXTests.swift */; };
 		D034FCB21AE5B67B00B3EDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCB11AE5B67B00B3EDD2 /* ViewController.swift */; };
 		D034FCB51AE5B6AE00B3EDD2 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FCB41AE5B6AE00B3EDD2 /* TextCell.xib */; };
 		D034FCB81AE5BB6200B3EDD2 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCB61AE5BB6200B3EDD2 /* TextCell.swift */; };
@@ -24,24 +24,15 @@
 		D0DE389E1AE71D0000990BDB /* TuckMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D034FC9F1AE5B1C600B3EDD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D034FC811AE5B1C500B3EDD2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D034FC881AE5B1C500B3EDD2;
-			remoteInfo = SlackUX;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		176DF86ABCF2F1A9E8700AF0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		99A02B8663F5114AE21F0CFD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D034FC891AE5B1C500B3EDD2 /* SlackUX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackUX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D034FC8D1AE5B1C500B3EDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D034FC8E1AE5B1C500B3EDD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D034FC931AE5B1C500B3EDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D034FC951AE5B1C500B3EDD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D034FC981AE5B1C500B3EDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D034FC9E1AE5B1C600B3EDD2 /* SlackUXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackUXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D034FCA31AE5B1C600B3EDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D034FCA41AE5B1C600B3EDD2 /* SlackUXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUXTests.swift; sourceTree = "<group>"; };
 		D034FCB11AE5B67B00B3EDD2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +46,7 @@
 		D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TuckMenu.xib; path = SlackUX/Views/TuckMenu.xib; sourceTree = "<group>"; };
 		D08011CF1AE76FC200003C95 /* SlackUX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlackUX-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuckMenuButton.swift; path = SlackUX/Views/TuckMenuButton.swift; sourceTree = "<group>"; };
+		F0EB7DC3A3FB88FA952E82E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,25 +54,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D034FC9B1AE5B1C600B3EDD2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3C040D63A438906FDDF4D4A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D4FDB062D0A2B2439B66763 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0EB7DC3A3FB88FA952E82E7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC8D11F99B981C5628162077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A02B8663F5114AE21F0CFD /* Pods.debug.xcconfig */,
+				176DF86ABCF2F1A9E8700AF0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D034FC801AE5B1C500B3EDD2 = {
 			isa = PBXGroup;
 			children = (
 				D034FC8B1AE5B1C500B3EDD2 /* SlackUX */,
 				D034FCA11AE5B1C600B3EDD2 /* SlackUXTests */,
 				D034FC8A1AE5B1C500B3EDD2 /* Products */,
+				AC8D11F99B981C5628162077 /* Pods */,
+				7D4FDB062D0A2B2439B66763 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				D034FC891AE5B1C500B3EDD2 /* SlackUX.app */,
-				D034FC9E1AE5B1C600B3EDD2 /* SlackUXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D034FCA81AE5B1C600B3EDD2 /* Build configuration list for PBXNativeTarget "SlackUX" */;
 			buildPhases = (
+				A5363656C7CCC88D09BB2DD2 /* Check Pods Manifest.lock */,
 				D034FC851AE5B1C500B3EDD2 /* Sources */,
 				D034FC861AE5B1C500B3EDD2 /* Frameworks */,
 				D034FC871AE5B1C500B3EDD2 /* Resources */,
+				1E7AF5C6B18E5BCF481E7265 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,24 +199,6 @@
 			productName = SlackUX;
 			productReference = D034FC891AE5B1C500B3EDD2 /* SlackUX.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D034FC9D1AE5B1C600B3EDD2 /* SlackUXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D034FCAB1AE5B1C600B3EDD2 /* Build configuration list for PBXNativeTarget "SlackUXTests" */;
-			buildPhases = (
-				D034FC9A1AE5B1C600B3EDD2 /* Sources */,
-				D034FC9B1AE5B1C600B3EDD2 /* Frameworks */,
-				D034FC9C1AE5B1C600B3EDD2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D034FCA01AE5B1C600B3EDD2 /* PBXTargetDependency */,
-			);
-			name = SlackUXTests;
-			productName = SlackUXTests;
-			productReference = D034FC9E1AE5B1C600B3EDD2 /* SlackUXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,10 +212,6 @@
 					D034FC881AE5B1C500B3EDD2 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = D78MW64VP8;
-					};
-					D034FC9D1AE5B1C600B3EDD2 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = D034FC881AE5B1C500B3EDD2;
 					};
 				};
 			};
@@ -245,7 +229,6 @@
 			projectRoot = "";
 			targets = (
 				D034FC881AE5B1C500B3EDD2 /* SlackUX */,
-				D034FC9D1AE5B1C600B3EDD2 /* SlackUXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,14 +246,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D034FC9C1AE5B1C600B3EDD2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E7AF5C6B18E5BCF481E7265 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		A5363656C7CCC88D09BB2DD2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D034FC851AE5B1C500B3EDD2 /* Sources */ = {
@@ -289,23 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D034FC9A1AE5B1C600B3EDD2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D034FCA51AE5B1C600B3EDD2 /* SlackUXTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D034FCA01AE5B1C600B3EDD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D034FC881AE5B1C500B3EDD2 /* SlackUX */;
-			targetProxy = D034FC9F1AE5B1C600B3EDD2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D034FC921AE5B1C500B3EDD2 /* Main.storyboard */ = {
@@ -412,6 +405,7 @@
 		};
 		D034FCA91AE5B1C600B3EDD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A02B8663F5114AE21F0CFD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -420,11 +414,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		D034FCAA1AE5B1C600B3EDD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176DF86ABCF2F1A9E8700AF0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -433,40 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		D034FCAC1AE5B1C600B3EDD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SlackUXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackUX.app/SlackUX";
-			};
-			name = Debug;
-		};
-		D034FCAD1AE5B1C600B3EDD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SlackUXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackUX.app/SlackUX";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
@@ -487,15 +450,6 @@
 			buildConfigurations = (
 				D034FCA91AE5B1C600B3EDD2 /* Debug */,
 				D034FCAA1AE5B1C600B3EDD2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D034FCAB1AE5B1C600B3EDD2 /* Build configuration list for PBXNativeTarget "SlackUXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D034FCAC1AE5B1C600B3EDD2 /* Debug */,
-				D034FCAD1AE5B1C600B3EDD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

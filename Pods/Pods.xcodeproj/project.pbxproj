@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0438587F4D0700418A612680 /* DTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E58F7A9EE98B40D901B51D4 /* DTCollectionViewCell.m */; };
+		0CCCACB116132F305A8C6514 /* DTCollectionViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C2353BC0D199C8835DC0B764 /* DTCollectionViewFactory.h */; };
+		0D8153D5BF663557DA392438 /* DTBaseStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D00B9F22BB459BA27CE2B87E /* DTBaseStorage.h */; };
+		19A56633E639135F619807E6 /* DTMemoryStorage+UpdateWithoutAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A408AFFE9EDD2F3DD7FFC39 /* DTMemoryStorage+UpdateWithoutAnimations.m */; };
+		1AFDD53151BB45474A69D4E1 /* DTSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C11713967B232036548CEF0 /* DTSection.h */; };
+		2653B1FA7D84DD346C63D4EC /* DTCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D292217AEE90285C6CB5C67 /* DTCollectionViewController.h */; };
+		35C64031E63EDF89B6BAE9C0 /* DTSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF19A7CEF7E1E7147ADE582F /* DTSectionModel.m */; };
+		3792ECB1DD98EEEF49638DA6 /* DTStorageUpdating.h in Headers */ = {isa = PBXBuildFile; fileRef = C68DD3A190CD5ADEEE9AEA2B /* DTStorageUpdating.h */; };
+		39EA73D0869562BCB80483A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354F88B6C05568F5AA810E6B /* UIKit.framework */; };
+		3F79C293F667031CFDE6B90C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617E201D6570A692F6A68E43 /* Foundation.framework */; };
+		44520EFEE5AEAE389D3F31D3 /* DTCollectionViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 274B8D45BB0E5064CABF8AC6 /* DTCollectionViewFactory.m */; };
+		4B2F087C801E480C1A1A0D9D /* DTSectionModel+CollectionViewHeadersFooters.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3371B4BED4432980D913F /* DTSectionModel+CollectionViewHeadersFooters.m */; };
+		4FD52945C232EC0327B8DB1D /* DTCoreDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398506E4D9C7F2AF24636F1 /* DTCoreDataStorage.m */; };
+		529BBBCD8819148547B0CB0E /* DTCoreDataStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 407C8B0C2089764679AE207B /* DTCoreDataStorage.h */; };
+		6A1F0C52B7C82658F7E2860E /* DTMemoryStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C03366CB4D295CA8820808D1 /* DTMemoryStorage.h */; };
+		6F3D50306F4999447D997D69 /* DTSectionModel+CollectionViewHeadersFooters.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A8D01B970465843292F405 /* DTSectionModel+CollectionViewHeadersFooters.h */; };
+		7BF257410067D47B7250B974 /* DTCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5480B6CB41936669FD3E417 /* DTCollectionReusableView.m */; };
+		7DFA24E9C16A78B83357A482 /* DTMemoryStorage+UpdateWithoutAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F4D6A11731CD33DCFE421DE /* DTMemoryStorage+UpdateWithoutAnimations.h */; };
+		83E9BDCCD0168E21C58EF15D /* DTStorageUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = B7AD0D974150E67E1AB605CD /* DTStorageUpdate.h */; };
+		8763D5C7CEE336CA7DC3090F /* DTCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E362ECB7B38C38C1AB21F5F /* DTCollectionViewCell.h */; };
+		897C6C6E7A735DC9C251034E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F54FEE91E25654B1586802D /* Pods-dummy.m */; };
+		8DB98192D8C4BEF8D9913617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617E201D6570A692F6A68E43 /* Foundation.framework */; };
+		947E91C990985184DA3BFACD /* DTCollectionReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9C6EC089B8215202615D67 /* DTCollectionReusableView.h */; };
+		9A3D4C747497EA2E2C28647B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617E201D6570A692F6A68E43 /* Foundation.framework */; };
+		9B6E8DD696609B501D553CB9 /* DTModelStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C9055B075855803C1DDE91F2 /* DTModelStorage.h */; };
+		A928DDBF2E09EFE135BA8EA0 /* Pods-DTModelStorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8BAD800D6D3769941FDFB5 /* Pods-DTModelStorage-dummy.m */; };
+		A9D88068DEA9AA48D5AF67FD /* DTMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB2B8EDD5C83FF7E44A579 /* DTMemoryStorage.m */; };
+		AA472B83D22EDB8AC3899519 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9235496DC13124B70C26229 /* CoreData.framework */; };
+		AB96C2752113693C0E0C17BB /* DTBaseStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 819FF50663E635A85AE1F59A /* DTBaseStorage.m */; };
+		AD5287433194D03BEC5BB075 /* DTCollectionViewControllerEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = C16AD5D0C438E6FBCFE909C8 /* DTCollectionViewControllerEvents.h */; };
+		AD9C27E59BCDF7D8AE45CB2A /* DTRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8953C3306990325FE536E48 /* DTRuntimeHelper.m */; };
+		B3DA80F8B723FD8559EF40E6 /* DTRuntimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7061B32D56449EB9CD1678D7 /* DTRuntimeHelper.h */; };
+		B8B225FD777D26421FFD70A5 /* DTCollectionViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AC2F0E7AD6B64A7A464B960 /* DTCollectionViewManager.h */; };
+		C34801704BC091C3D1C2DE1A /* DTSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A16D583318C9CC206DE8E5 /* DTSectionModel.h */; };
+		D82D1A43D1DC3FAC724CA88F /* DTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EFCF69690C86C6A6067896 /* DTCollectionViewController.m */; };
+		E48AC677E9655F96438AF754 /* Pods-DTCollectionViewManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44588E2CCC4004CB18F33D4E /* Pods-DTCollectionViewManager-dummy.m */; };
+		E6976E5397A8AE1CA376ED98 /* DTMemoryStorage+DTCollectionViewManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4ADE195634A9E04E4E3F6 /* DTMemoryStorage+DTCollectionViewManagerAdditions.m */; };
+		E8887E14A5F9EDDD520F72B8 /* DTStorageProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D11672E1C6750DBDC19E2F /* DTStorageProtocol.h */; };
+		EFA27FBF6CEAB9BC68944F1B /* DTMemoryStorage+DTCollectionViewManagerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E474F6C6E10366508F36B9E7 /* DTMemoryStorage+DTCollectionViewManagerAdditions.h */; };
+		F345FED1B96726558AA5572D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354F88B6C05568F5AA810E6B /* UIKit.framework */; };
+		F9A778521040B4F3E2491FDD /* DTStorageUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = D621698443ED16A1CF2BEF2F /* DTStorageUpdate.m */; };
+		FAEE1167A7061BA125D78E8C /* DTModelTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = CB364ED19DF6621E22F1CC78 /* DTModelTransfer.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CB3142109B4B01B4383F953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F0EF6852D43769BA07DCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D71F9A1CE61D92174BF20AF6;
+			remoteInfo = "Pods-DTModelStorage";
+		};
+		8E974FD99E3986CF98FFB79E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F0EF6852D43769BA07DCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D71F9A1CE61D92174BF20AF6;
+			remoteInfo = "Pods-DTModelStorage";
+		};
+		B56F3AEBA3FBF1D5C9D70EC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0F0EF6852D43769BA07DCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F0A6099CB108611F17D4904;
+			remoteInfo = "Pods-DTCollectionViewManager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0326F599DEAA7A7AE939E7F4 /* libPods-DTModelStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTModelStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D292217AEE90285C6CB5C67 /* DTCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCollectionViewController.h; path = DTCollectionViewManager/DTCollectionViewController.h; sourceTree = "<group>"; };
+		0E8BAD800D6D3769941FDFB5 /* Pods-DTModelStorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DTModelStorage-dummy.m"; sourceTree = "<group>"; };
+		113E0A554C11B5253126E530 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		1F9C6EC089B8215202615D67 /* DTCollectionReusableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCollectionReusableView.h; path = DTCollectionViewManager/Convenience/DTCollectionReusableView.h; sourceTree = "<group>"; };
+		254AC72D874BB3F216638A80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		274B8D45BB0E5064CABF8AC6 /* DTCollectionViewFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCollectionViewFactory.m; path = DTCollectionViewManager/DTCollectionViewFactory.m; sourceTree = "<group>"; };
+		2E58F7A9EE98B40D901B51D4 /* DTCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCollectionViewCell.m; path = DTCollectionViewManager/Convenience/DTCollectionViewCell.m; sourceTree = "<group>"; };
+		2F4D6A11731CD33DCFE421DE /* DTMemoryStorage+UpdateWithoutAnimations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DTMemoryStorage+UpdateWithoutAnimations.h"; path = "DTModelStorage/Utilities/DTMemoryStorage+UpdateWithoutAnimations.h"; sourceTree = "<group>"; };
+		354F88B6C05568F5AA810E6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		36D11672E1C6750DBDC19E2F /* DTStorageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTStorageProtocol.h; path = DTModelStorage/Core/DTStorageProtocol.h; sourceTree = "<group>"; };
+		37A8D01B970465843292F405 /* DTSectionModel+CollectionViewHeadersFooters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DTSectionModel+CollectionViewHeadersFooters.h"; path = "DTCollectionViewManager/Convenience/DTSectionModel+CollectionViewHeadersFooters.h"; sourceTree = "<group>"; };
+		3AC2F0E7AD6B64A7A464B960 /* DTCollectionViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCollectionViewManager.h; path = DTCollectionViewManager/DTCollectionViewManager.h; sourceTree = "<group>"; };
+		3C11713967B232036548CEF0 /* DTSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTSection.h; path = DTModelStorage/Core/DTSection.h; sourceTree = "<group>"; };
+		4055B7395C9BD27523CCD6A7 /* Pods-DTCollectionViewManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DTCollectionViewManager-prefix.pch"; sourceTree = "<group>"; };
+		407C8B0C2089764679AE207B /* DTCoreDataStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCoreDataStorage.h; path = DTModelStorage/CoreData/DTCoreDataStorage.h; sourceTree = "<group>"; };
+		40EFCF69690C86C6A6067896 /* DTCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCollectionViewController.m; path = DTCollectionViewManager/DTCollectionViewController.m; sourceTree = "<group>"; };
+		42B3371B4BED4432980D913F /* DTSectionModel+CollectionViewHeadersFooters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DTSectionModel+CollectionViewHeadersFooters.m"; path = "DTCollectionViewManager/Convenience/DTSectionModel+CollectionViewHeadersFooters.m"; sourceTree = "<group>"; };
+		44588E2CCC4004CB18F33D4E /* Pods-DTCollectionViewManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DTCollectionViewManager-dummy.m"; sourceTree = "<group>"; };
+		469C435E3D3E517C19FA0EFC /* Pods-DTModelStorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DTModelStorage.xcconfig"; sourceTree = "<group>"; };
+		4A408AFFE9EDD2F3DD7FFC39 /* DTMemoryStorage+UpdateWithoutAnimations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DTMemoryStorage+UpdateWithoutAnimations.m"; path = "DTModelStorage/Utilities/DTMemoryStorage+UpdateWithoutAnimations.m"; sourceTree = "<group>"; };
+		4BA4ADE195634A9E04E4E3F6 /* DTMemoryStorage+DTCollectionViewManagerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DTMemoryStorage+DTCollectionViewManagerAdditions.m"; path = "DTCollectionViewManager/DTMemoryStorage+DTCollectionViewManagerAdditions.m"; sourceTree = "<group>"; };
+		56AB895F56CAA8C3B3F774E8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		617E201D6570A692F6A68E43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62A16D583318C9CC206DE8E5 /* DTSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTSectionModel.h; path = DTModelStorage/Memory/DTSectionModel.h; sourceTree = "<group>"; };
+		64A03CD1C066768A12C0B8B8 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		6E362ECB7B38C38C1AB21F5F /* DTCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCollectionViewCell.h; path = DTCollectionViewManager/Convenience/DTCollectionViewCell.h; sourceTree = "<group>"; };
+		7061B32D56449EB9CD1678D7 /* DTRuntimeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTRuntimeHelper.h; path = DTModelStorage/Utilities/DTRuntimeHelper.h; sourceTree = "<group>"; };
+		7880566EEB6D911EF3AC14F1 /* Pods-DTCollectionViewManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DTCollectionViewManager-Private.xcconfig"; sourceTree = "<group>"; };
+		819FF50663E635A85AE1F59A /* DTBaseStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTBaseStorage.m; path = DTModelStorage/Core/DTBaseStorage.m; sourceTree = "<group>"; };
+		86BEDDC6E2861FADAED7482D /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		8BB45377D7A06469EE124D68 /* Pods-DTCollectionViewManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DTCollectionViewManager.xcconfig"; sourceTree = "<group>"; };
+		9398506E4D9C7F2AF24636F1 /* DTCoreDataStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCoreDataStorage.m; path = DTModelStorage/CoreData/DTCoreDataStorage.m; sourceTree = "<group>"; };
+		9DAB2B8EDD5C83FF7E44A579 /* DTMemoryStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTMemoryStorage.m; path = DTModelStorage/Memory/DTMemoryStorage.m; sourceTree = "<group>"; };
+		9F54FEE91E25654B1586802D /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		A163816B13583E714A8EE54F /* Pods-DTModelStorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DTModelStorage-prefix.pch"; sourceTree = "<group>"; };
+		AA7D9E395B7B8DF1FCB6C8FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		AF19A7CEF7E1E7147ADE582F /* DTSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTSectionModel.m; path = DTModelStorage/Memory/DTSectionModel.m; sourceTree = "<group>"; };
+		B7AD0D974150E67E1AB605CD /* DTStorageUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTStorageUpdate.h; path = DTModelStorage/Core/DTStorageUpdate.h; sourceTree = "<group>"; };
+		B8953C3306990325FE536E48 /* DTRuntimeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTRuntimeHelper.m; path = DTModelStorage/Utilities/DTRuntimeHelper.m; sourceTree = "<group>"; };
+		C03366CB4D295CA8820808D1 /* DTMemoryStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTMemoryStorage.h; path = DTModelStorage/Memory/DTMemoryStorage.h; sourceTree = "<group>"; };
+		C16AD5D0C438E6FBCFE909C8 /* DTCollectionViewControllerEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCollectionViewControllerEvents.h; path = DTCollectionViewManager/DTCollectionViewControllerEvents.h; sourceTree = "<group>"; };
+		C21DF7F2534232B7E557001B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2353BC0D199C8835DC0B764 /* DTCollectionViewFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTCollectionViewFactory.h; path = DTCollectionViewManager/DTCollectionViewFactory.h; sourceTree = "<group>"; };
+		C4402D7969A66808488C09E3 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C68DD3A190CD5ADEEE9AEA2B /* DTStorageUpdating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTStorageUpdating.h; path = DTModelStorage/Core/DTStorageUpdating.h; sourceTree = "<group>"; };
+		C9055B075855803C1DDE91F2 /* DTModelStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTModelStorage.h; path = DTModelStorage/DTModelStorage.h; sourceTree = "<group>"; };
+		CB364ED19DF6621E22F1CC78 /* DTModelTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTModelTransfer.h; path = DTModelStorage/Utilities/DTModelTransfer.h; sourceTree = "<group>"; };
+		D00B9F22BB459BA27CE2B87E /* DTBaseStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTBaseStorage.h; path = DTModelStorage/Core/DTBaseStorage.h; sourceTree = "<group>"; };
+		D5480B6CB41936669FD3E417 /* DTCollectionReusableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTCollectionReusableView.m; path = DTCollectionViewManager/Convenience/DTCollectionReusableView.m; sourceTree = "<group>"; };
+		D621698443ED16A1CF2BEF2F /* DTStorageUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTStorageUpdate.m; path = DTModelStorage/Core/DTStorageUpdate.m; sourceTree = "<group>"; };
+		E474F6C6E10366508F36B9E7 /* DTMemoryStorage+DTCollectionViewManagerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DTMemoryStorage+DTCollectionViewManagerAdditions.h"; path = "DTCollectionViewManager/DTMemoryStorage+DTCollectionViewManagerAdditions.h"; sourceTree = "<group>"; };
+		E9235496DC13124B70C26229 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		ECAA240E1B1F43730173ABB2 /* libPods-DTCollectionViewManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTCollectionViewManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9568E2CDDC0C117DA894DF /* Pods-DTModelStorage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DTModelStorage-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6414974E08EA94072DF7A748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA472B83D22EDB8AC3899519 /* CoreData.framework in Frameworks */,
+				8DB98192D8C4BEF8D9913617 /* Foundation.framework in Frameworks */,
+				39EA73D0869562BCB80483A5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C2E3F434C252EC9B019B27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3D4C747497EA2E2C28647B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43F4118C037E905A86436BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F79C293F667031CFDE6B90C /* Foundation.framework in Frameworks */,
+				F345FED1B96726558AA5572D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003328771A038C48432882C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				254AC72D874BB3F216638A80 /* libPods.a */,
+				ECAA240E1B1F43730173ABB2 /* libPods-DTCollectionViewManager.a */,
+				0326F599DEAA7A7AE939E7F4 /* libPods-DTModelStorage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1572FD31BFA09F3BF5D240B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				469C435E3D3E517C19FA0EFC /* Pods-DTModelStorage.xcconfig */,
+				FE9568E2CDDC0C117DA894DF /* Pods-DTModelStorage-Private.xcconfig */,
+				0E8BAD800D6D3769941FDFB5 /* Pods-DTModelStorage-dummy.m */,
+				A163816B13583E714A8EE54F /* Pods-DTModelStorage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-DTModelStorage";
+			sourceTree = "<group>";
+		};
+		158FC42DB3D24F98FF300D9E /* DTCollectionViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				1F9C6EC089B8215202615D67 /* DTCollectionReusableView.h */,
+				D5480B6CB41936669FD3E417 /* DTCollectionReusableView.m */,
+				6E362ECB7B38C38C1AB21F5F /* DTCollectionViewCell.h */,
+				2E58F7A9EE98B40D901B51D4 /* DTCollectionViewCell.m */,
+				0D292217AEE90285C6CB5C67 /* DTCollectionViewController.h */,
+				40EFCF69690C86C6A6067896 /* DTCollectionViewController.m */,
+				C16AD5D0C438E6FBCFE909C8 /* DTCollectionViewControllerEvents.h */,
+				C2353BC0D199C8835DC0B764 /* DTCollectionViewFactory.h */,
+				274B8D45BB0E5064CABF8AC6 /* DTCollectionViewFactory.m */,
+				3AC2F0E7AD6B64A7A464B960 /* DTCollectionViewManager.h */,
+				E474F6C6E10366508F36B9E7 /* DTMemoryStorage+DTCollectionViewManagerAdditions.h */,
+				4BA4ADE195634A9E04E4E3F6 /* DTMemoryStorage+DTCollectionViewManagerAdditions.m */,
+				37A8D01B970465843292F405 /* DTSectionModel+CollectionViewHeadersFooters.h */,
+				42B3371B4BED4432980D913F /* DTSectionModel+CollectionViewHeadersFooters.m */,
+				922FFCB4AC0310C8C8630547 /* Support Files */,
+			);
+			path = DTCollectionViewManager;
+			sourceTree = "<group>";
+		};
+		16D18769D6B17C812FFFCCCD /* DTModelStorage */ = {
+			isa = PBXGroup;
+			children = (
+				F41E1DDC21F8011E700D9A37 /* All */,
+				9E8DA863AB3B5F3AFE454240 /* Core */,
+				932DCF2C3A8F5F8A2E61E5B0 /* CoreDataStorage */,
+				8243BE1B1582E5AC61F46C32 /* MemoryStorage */,
+				1572FD31BFA09F3BF5D240B2 /* Support Files */,
+			);
+			path = DTModelStorage;
+			sourceTree = "<group>";
+		};
+		5ABDC0540CBBA0A84A4BF3C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4402D7969A66808488C09E3 /* Pods-acknowledgements.markdown */,
+				113E0A554C11B5253126E530 /* Pods-acknowledgements.plist */,
+				9F54FEE91E25654B1586802D /* Pods-dummy.m */,
+				64A03CD1C066768A12C0B8B8 /* Pods-environment.h */,
+				86BEDDC6E2861FADAED7482D /* Pods-resources.sh */,
+				56AB895F56CAA8C3B3F774E8 /* Pods.debug.xcconfig */,
+				AA7D9E395B7B8DF1FCB6C8FE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		64839D4905CBAD15082EB79C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ABDC0540CBBA0A84A4BF3C4 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8243BE1B1582E5AC61F46C32 /* MemoryStorage */ = {
+			isa = PBXGroup;
+			children = (
+				C03366CB4D295CA8820808D1 /* DTMemoryStorage.h */,
+				9DAB2B8EDD5C83FF7E44A579 /* DTMemoryStorage.m */,
+				2F4D6A11731CD33DCFE421DE /* DTMemoryStorage+UpdateWithoutAnimations.h */,
+				4A408AFFE9EDD2F3DD7FFC39 /* DTMemoryStorage+UpdateWithoutAnimations.m */,
+				CB364ED19DF6621E22F1CC78 /* DTModelTransfer.h */,
+				7061B32D56449EB9CD1678D7 /* DTRuntimeHelper.h */,
+				B8953C3306990325FE536E48 /* DTRuntimeHelper.m */,
+				62A16D583318C9CC206DE8E5 /* DTSectionModel.h */,
+				AF19A7CEF7E1E7147ADE582F /* DTSectionModel.m */,
+			);
+			name = MemoryStorage;
+			sourceTree = "<group>";
+		};
+		8981BC5FDDB68530F9A05FC4 = {
+			isa = PBXGroup;
+			children = (
+				C21DF7F2534232B7E557001B /* Podfile */,
+				EA1B0D362B72B8A524B51CB5 /* Frameworks */,
+				E35EB8E7F92BA78B001A0C99 /* Pods */,
+				003328771A038C48432882C1 /* Products */,
+				64839D4905CBAD15082EB79C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		922FFCB4AC0310C8C8630547 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BB45377D7A06469EE124D68 /* Pods-DTCollectionViewManager.xcconfig */,
+				7880566EEB6D911EF3AC14F1 /* Pods-DTCollectionViewManager-Private.xcconfig */,
+				44588E2CCC4004CB18F33D4E /* Pods-DTCollectionViewManager-dummy.m */,
+				4055B7395C9BD27523CCD6A7 /* Pods-DTCollectionViewManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-DTCollectionViewManager";
+			sourceTree = "<group>";
+		};
+		932DCF2C3A8F5F8A2E61E5B0 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				407C8B0C2089764679AE207B /* DTCoreDataStorage.h */,
+				9398506E4D9C7F2AF24636F1 /* DTCoreDataStorage.m */,
+			);
+			name = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		9E8DA863AB3B5F3AFE454240 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D00B9F22BB459BA27CE2B87E /* DTBaseStorage.h */,
+				819FF50663E635A85AE1F59A /* DTBaseStorage.m */,
+				3C11713967B232036548CEF0 /* DTSection.h */,
+				36D11672E1C6750DBDC19E2F /* DTStorageProtocol.h */,
+				B7AD0D974150E67E1AB605CD /* DTStorageUpdate.h */,
+				D621698443ED16A1CF2BEF2F /* DTStorageUpdate.m */,
+				C68DD3A190CD5ADEEE9AEA2B /* DTStorageUpdating.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E35EB8E7F92BA78B001A0C99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				158FC42DB3D24F98FF300D9E /* DTCollectionViewManager */,
+				16D18769D6B17C812FFFCCCD /* DTModelStorage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA1B0D362B72B8A524B51CB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7CB0313D4B0840236D081CF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F41E1DDC21F8011E700D9A37 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				C9055B075855803C1DDE91F2 /* DTModelStorage.h */,
+			);
+			name = All;
+			sourceTree = "<group>";
+		};
+		F7CB0313D4B0840236D081CF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E9235496DC13124B70C26229 /* CoreData.framework */,
+				617E201D6570A692F6A68E43 /* Foundation.framework */,
+				354F88B6C05568F5AA810E6B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		62BC5956F2820F46338CFA74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8153D5BF663557DA392438 /* DTBaseStorage.h in Headers */,
+				529BBBCD8819148547B0CB0E /* DTCoreDataStorage.h in Headers */,
+				7DFA24E9C16A78B83357A482 /* DTMemoryStorage+UpdateWithoutAnimations.h in Headers */,
+				6A1F0C52B7C82658F7E2860E /* DTMemoryStorage.h in Headers */,
+				9B6E8DD696609B501D553CB9 /* DTModelStorage.h in Headers */,
+				FAEE1167A7061BA125D78E8C /* DTModelTransfer.h in Headers */,
+				B3DA80F8B723FD8559EF40E6 /* DTRuntimeHelper.h in Headers */,
+				1AFDD53151BB45474A69D4E1 /* DTSection.h in Headers */,
+				C34801704BC091C3D1C2DE1A /* DTSectionModel.h in Headers */,
+				E8887E14A5F9EDDD520F72B8 /* DTStorageProtocol.h in Headers */,
+				83E9BDCCD0168E21C58EF15D /* DTStorageUpdate.h in Headers */,
+				3792ECB1DD98EEEF49638DA6 /* DTStorageUpdating.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6A055C7517DFC49C2BDA13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947E91C990985184DA3BFACD /* DTCollectionReusableView.h in Headers */,
+				8763D5C7CEE336CA7DC3090F /* DTCollectionViewCell.h in Headers */,
+				2653B1FA7D84DD346C63D4EC /* DTCollectionViewController.h in Headers */,
+				AD5287433194D03BEC5BB075 /* DTCollectionViewControllerEvents.h in Headers */,
+				0CCCACB116132F305A8C6514 /* DTCollectionViewFactory.h in Headers */,
+				B8B225FD777D26421FFD70A5 /* DTCollectionViewManager.h in Headers */,
+				EFA27FBF6CEAB9BC68944F1B /* DTMemoryStorage+DTCollectionViewManagerAdditions.h in Headers */,
+				6F3D50306F4999447D997D69 /* DTSectionModel+CollectionViewHeadersFooters.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7F0A6099CB108611F17D4904 /* Pods-DTCollectionViewManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B3DD55E7F9F603EC0864A7 /* Build configuration list for PBXNativeTarget "Pods-DTCollectionViewManager" */;
+			buildPhases = (
+				9EA51BEF2BB073F8B9F0CA5E /* Sources */,
+				D43F4118C037E905A86436BF /* Frameworks */,
+				EA6A055C7517DFC49C2BDA13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D4AD2417AACEA7DFDA805B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-DTCollectionViewManager";
+			productName = "Pods-DTCollectionViewManager";
+			productReference = ECAA240E1B1F43730173ABB2 /* libPods-DTCollectionViewManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9F507AE5E87E51BEC1919CED /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C62333B390B20723D32A7C /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				6C3E5E224B37825467DBCFA7 /* Sources */,
+				7C2E3F434C252EC9B019B27B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD81913C0C9E87169AB4C3CE /* PBXTargetDependency */,
+				192C9343569D95F056EC3E96 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 254AC72D874BB3F216638A80 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D71F9A1CE61D92174BF20AF6 /* Pods-DTModelStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91BBE8F39623EE076365E9F /* Build configuration list for PBXNativeTarget "Pods-DTModelStorage" */;
+			buildPhases = (
+				26E7783F7AA61B80E60C1233 /* Sources */,
+				6414974E08EA94072DF7A748 /* Frameworks */,
+				62BC5956F2820F46338CFA74 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DTModelStorage";
+			productName = "Pods-DTModelStorage";
+			productReference = 0326F599DEAA7A7AE939E7F4 /* libPods-DTModelStorage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C0F0EF6852D43769BA07DCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 90739225894210741A726BFF /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8981BC5FDDB68530F9A05FC4;
+			productRefGroup = 003328771A038C48432882C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F507AE5E87E51BEC1919CED /* Pods */,
+				7F0A6099CB108611F17D4904 /* Pods-DTCollectionViewManager */,
+				D71F9A1CE61D92174BF20AF6 /* Pods-DTModelStorage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26E7783F7AA61B80E60C1233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB96C2752113693C0E0C17BB /* DTBaseStorage.m in Sources */,
+				4FD52945C232EC0327B8DB1D /* DTCoreDataStorage.m in Sources */,
+				19A56633E639135F619807E6 /* DTMemoryStorage+UpdateWithoutAnimations.m in Sources */,
+				A9D88068DEA9AA48D5AF67FD /* DTMemoryStorage.m in Sources */,
+				AD9C27E59BCDF7D8AE45CB2A /* DTRuntimeHelper.m in Sources */,
+				35C64031E63EDF89B6BAE9C0 /* DTSectionModel.m in Sources */,
+				F9A778521040B4F3E2491FDD /* DTStorageUpdate.m in Sources */,
+				A928DDBF2E09EFE135BA8EA0 /* Pods-DTModelStorage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3E5E224B37825467DBCFA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897C6C6E7A735DC9C251034E /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EA51BEF2BB073F8B9F0CA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF257410067D47B7250B974 /* DTCollectionReusableView.m in Sources */,
+				0438587F4D0700418A612680 /* DTCollectionViewCell.m in Sources */,
+				D82D1A43D1DC3FAC724CA88F /* DTCollectionViewController.m in Sources */,
+				44520EFEE5AEAE389D3F31D3 /* DTCollectionViewFactory.m in Sources */,
+				E6976E5397A8AE1CA376ED98 /* DTMemoryStorage+DTCollectionViewManagerAdditions.m in Sources */,
+				4B2F087C801E480C1A1A0D9D /* DTSectionModel+CollectionViewHeadersFooters.m in Sources */,
+				E48AC677E9655F96438AF754 /* Pods-DTCollectionViewManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		192C9343569D95F056EC3E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DTModelStorage";
+			target = D71F9A1CE61D92174BF20AF6 /* Pods-DTModelStorage */;
+			targetProxy = 8E974FD99E3986CF98FFB79E /* PBXContainerItemProxy */;
+		};
+		6D4AD2417AACEA7DFDA805B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DTModelStorage";
+			target = D71F9A1CE61D92174BF20AF6 /* Pods-DTModelStorage */;
+			targetProxy = 8CB3142109B4B01B4383F953 /* PBXContainerItemProxy */;
+		};
+		CD81913C0C9E87169AB4C3CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DTCollectionViewManager";
+			target = 7F0A6099CB108611F17D4904 /* Pods-DTCollectionViewManager */;
+			targetProxy = B56F3AEBA3FBF1D5C9D70EC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B6D28604F4EFC9BC2B01392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9568E2CDDC0C117DA894DF /* Pods-DTModelStorage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DTModelStorage/Pods-DTModelStorage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3D1F6F81341C178FAC2A08A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7880566EEB6D911EF3AC14F1 /* Pods-DTCollectionViewManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DTCollectionViewManager/Pods-DTCollectionViewManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3D3FF02D7669269F586BF1C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7880566EEB6D911EF3AC14F1 /* Pods-DTCollectionViewManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DTCollectionViewManager/Pods-DTCollectionViewManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FF4321B1BBB569AED597A44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		674B6B215882CD330008345F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		796CC0C045C3F99759540499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9568E2CDDC0C117DA894DF /* Pods-DTModelStorage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DTModelStorage/Pods-DTModelStorage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7A4BB3A65D61902CFB37A3C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA7D9E395B7B8DF1FCB6C8FE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		911CBABDE97C57DFBEBBEDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56AB895F56CAA8C3B3F774E8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08C62333B390B20723D32A7C /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911CBABDE97C57DFBEBBEDD8 /* Debug */,
+				7A4BB3A65D61902CFB37A3C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76B3DD55E7F9F603EC0864A7 /* Build configuration list for PBXNativeTarget "Pods-DTCollectionViewManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1F6F81341C178FAC2A08A6 /* Debug */,
+				3D3FF02D7669269F586BF1C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90739225894210741A726BFF /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674B6B215882CD330008345F /* Debug */,
+				3FF4321B1BBB569AED597A44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91BBE8F39623EE076365E9F /* Build configuration list for PBXNativeTarget "Pods-DTModelStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796CC0C045C3F99759540499 /* Debug */,
+				1B6D28604F4EFC9BC2B01392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C0F0EF6852D43769BA07DCF /* Project object */;
+}
