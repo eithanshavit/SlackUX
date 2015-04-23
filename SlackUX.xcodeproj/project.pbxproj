@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C040D63A438906FDDF4D4A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EB7DC3A3FB88FA952E82E7 /* libPods.a */; };
+		D02A6EAE1AE774EE00D88D31 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02A6EAC1AE774EE00D88D31 /* ListViewController.swift */; };
+		D02A6EAF1AE774EE00D88D31 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02A6EAD1AE774EE00D88D31 /* ListViewController.xib */; };
 		D034FC8F1AE5B1C500B3EDD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FC8E1AE5B1C500B3EDD2 /* AppDelegate.swift */; };
 		D034FC941AE5B1C500B3EDD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D034FC921AE5B1C500B3EDD2 /* Main.storyboard */; };
 		D034FC961AE5B1C500B3EDD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D034FC951AE5B1C500B3EDD2 /* Images.xcassets */; };
@@ -21,12 +23,16 @@
 		D034FCCB1AE60A1A00B3EDD2 /* TuckMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCCA1AE60A1A00B3EDD2 /* TuckMenu.swift */; };
 		D034FCCD1AE60EE900B3EDD2 /* IBReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */; };
 		D034FCCF1AE60F9200B3EDD2 /* TuckMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */; };
+		D0B2ECAE1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2ECAD1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift */; };
+		D0B2ECB01AE8BC57000DD0C5 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B2ECAF1AE8BC57000DD0C5 /* ListCollectionViewCell.xib */; };
 		D0DE389E1AE71D0000990BDB /* TuckMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		176DF86ABCF2F1A9E8700AF0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		99A02B8663F5114AE21F0CFD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D02A6EAC1AE774EE00D88D31 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = Controllers/ListViewController.swift; sourceTree = "<group>"; };
+		D02A6EAD1AE774EE00D88D31 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListViewController.xib; path = Controllers/ListViewController.xib; sourceTree = "<group>"; };
 		D034FC891AE5B1C500B3EDD2 /* SlackUX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackUX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D034FC8D1AE5B1C500B3EDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D034FC8E1AE5B1C500B3EDD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 		D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBReusableView.swift; path = SlackUX/Views/IBReusableView.swift; sourceTree = "<group>"; };
 		D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TuckMenu.xib; path = SlackUX/Views/TuckMenu.xib; sourceTree = "<group>"; };
 		D08011CF1AE76FC200003C95 /* SlackUX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlackUX-Bridging-Header.h"; sourceTree = "<group>"; };
+		D0B2ECAD1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCollectionViewCell.swift; path = SlackUX/Views/ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0B2ECAF1AE8BC57000DD0C5 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCollectionViewCell.xib; path = SlackUX/Views/ListCollectionViewCell.xib; sourceTree = "<group>"; };
 		D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuckMenuButton.swift; path = SlackUX/Views/TuckMenuButton.swift; sourceTree = "<group>"; };
 		F0EB7DC3A3FB88FA952E82E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +150,8 @@
 		D034FCAE1AE5B63A00B3EDD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D0B2ECAF1AE8BC57000DD0C5 /* ListCollectionViewCell.xib */,
+				D0B2ECAD1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift */,
 				D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */,
 				D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */,
 				D034FCB41AE5B6AE00B3EDD2 /* TextCell.xib */,
@@ -156,6 +166,8 @@
 		D034FCB31AE5B67F00B3EDD2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D02A6EAC1AE774EE00D88D31 /* ListViewController.swift */,
+				D02A6EAD1AE774EE00D88D31 /* ListViewController.xib */,
 				D034FCB11AE5B67B00B3EDD2 /* ViewController.swift */,
 			);
 			name = Controllers;
@@ -238,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02A6EAF1AE774EE00D88D31 /* ListViewController.xib in Resources */,
+				D0B2ECB01AE8BC57000DD0C5 /* ListCollectionViewCell.xib in Resources */,
 				D034FC941AE5B1C500B3EDD2 /* Main.storyboard in Resources */,
 				D034FC991AE5B1C500B3EDD2 /* LaunchScreen.xib in Resources */,
 				D034FC961AE5B1C500B3EDD2 /* Images.xcassets in Resources */,
@@ -286,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B2ECAE1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift in Sources */,
 				D034FCCD1AE60EE900B3EDD2 /* IBReusableView.swift in Sources */,
 				D034FCC31AE5BBF200B3EDD2 /* CollectionViewDataSource.swift in Sources */,
 				D034FCC51AE5BC8100B3EDD2 /* User.swift in Sources */,
 				D034FCB21AE5B67B00B3EDD2 /* ViewController.swift in Sources */,
+				D02A6EAE1AE774EE00D88D31 /* ListViewController.swift in Sources */,
 				D034FCCB1AE60A1A00B3EDD2 /* TuckMenu.swift in Sources */,
 				D034FCB81AE5BB6200B3EDD2 /* TextCell.swift in Sources */,
 				D034FCC21AE5BBF200B3EDD2 /* Message.swift in Sources */,

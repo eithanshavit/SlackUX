@@ -17,6 +17,20 @@ class ViewController: UIViewController {
   private var tuckMenuLocked = false
   private var tuckMenuBlinked = false
   
+  private var channelList: ListViewController {
+    let l = ListViewController(nibName: "ListViewController", bundle: nil)
+    l.headerImage = UIImage(named: "channelsHeader")
+    l.modalTransitionStyle = .CrossDissolve
+    return l
+  }
+  
+  private var chatList: ListViewController {
+    let l = ListViewController(nibName: "ListViewController", bundle: nil)
+    l.headerImage = UIImage(named: "channelsHeader")
+    l.modalTransitionStyle = .CrossDissolve
+    return l
+  }
+  
   var tuckMenu = TuckMenu()
   var collectionBackgroundView = UIView()
   
@@ -39,6 +53,8 @@ class ViewController: UIViewController {
     collectionBackgroundView.backgroundColor = UIColor.whiteColor()
     collectionView.backgroundView = collectionBackgroundView
     collectionBackgroundView.addSubview(tuckMenu)
+    
+    tuckMenu.delegate = self
   }
   
   override func didReceiveMemoryWarning() {
@@ -49,6 +65,21 @@ class ViewController: UIViewController {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     tuckMenu.frame = CGRect(x: 0, y: collectionBackgroundView.bounds.height - 70 , width: collectionBackgroundView.bounds.width, height: 70)
+  }
+  
+}
+
+// MARK: - Actions
+
+extension ViewController {
+  
+  func chatButtonTap() {
+    presentViewController(chatList, animated: true, completion: nil)
+    
+  }
+
+  func hashButtonTap() {
+    presentViewController(channelList, animated: true, completion: nil)
   }
   
 }

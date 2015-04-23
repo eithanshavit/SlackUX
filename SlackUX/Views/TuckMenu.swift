@@ -22,6 +22,8 @@ class TuckMenu: IBReusableView {
   @IBOutlet weak var chatButtonCenterOffset: NSLayoutConstraint!
   @IBOutlet weak var hashButtonCenterOffset: NSLayoutConstraint!
   
+  var delegate: ViewController!
+  
   convenience init() {
     self.init(frame: CGRectZero, xib: "TuckMenu")
   }
@@ -57,4 +59,10 @@ class TuckMenu: IBReusableView {
     return UIColor(hue: actualHue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
   }
 
+  @IBAction func chatButtonTap(sender: AnyObject) {
+    delegate?.chatButtonTap()
+  }
+  @IBAction func hashButtonTap(sender: AnyObject) {
+    delegate?.hashButtonTap()
+  }
 }
