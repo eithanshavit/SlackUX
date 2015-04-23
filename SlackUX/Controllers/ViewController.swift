@@ -17,19 +17,29 @@ class ViewController: UIViewController {
   private var tuckMenuLocked = false
   private var tuckMenuBlinked = false
   
-  private var channelList: ListViewController {
-    let l = ListViewController(nibName: "ListViewController", bundle: nil)
-    l.headerImage = UIImage(named: "channelsHeader")
-    l.modalTransitionStyle = .CrossDissolve
-    return l
+  var headerImage = UIImage(named: "newHeaderChannel")!
+  
+  @IBOutlet weak var headerImageView: UIImageView! {
+    didSet {
+      headerImageView.image = headerImage
+    }
   }
   
-  private var chatList: ListViewController {
+  private var channelList: ListViewController = {
     let l = ListViewController(nibName: "ListViewController", bundle: nil)
     l.headerImage = UIImage(named: "channelsHeader")
+    l.type = "channels"
     l.modalTransitionStyle = .CrossDissolve
     return l
-  }
+  }()
+  
+  private var chatList: ListViewController = {
+    let l = ListViewController(nibName: "ListViewController", bundle: nil)
+    l.headerImage = UIImage(named: "chatHeader")
+    l.type = "chats"
+    l.modalTransitionStyle = .CrossDissolve
+    return l
+  }()
   
   var tuckMenu = TuckMenu()
   var collectionBackgroundView = UIView()

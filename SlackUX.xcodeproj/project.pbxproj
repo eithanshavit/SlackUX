@@ -25,6 +25,7 @@
 		D034FCCF1AE60F9200B3EDD2 /* TuckMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034FCCE1AE60F9200B3EDD2 /* TuckMenu.xib */; };
 		D0B2ECAE1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2ECAD1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift */; };
 		D0B2ECB01AE8BC57000DD0C5 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B2ECAF1AE8BC57000DD0C5 /* ListCollectionViewCell.xib */; };
+		D0B2ECB21AE98169000DD0C5 /* UserListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B2ECB11AE98169000DD0C5 /* UserListCollectionViewCell.xib */; };
 		D0DE389E1AE71D0000990BDB /* TuckMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		D08011CF1AE76FC200003C95 /* SlackUX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlackUX-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0B2ECAD1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCollectionViewCell.swift; path = SlackUX/Views/ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		D0B2ECAF1AE8BC57000DD0C5 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCollectionViewCell.xib; path = SlackUX/Views/ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D0B2ECB11AE98169000DD0C5 /* UserListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserListCollectionViewCell.xib; path = SlackUX/Views/UserListCollectionViewCell.xib; sourceTree = "<group>"; };
 		D0DE389D1AE71D0000990BDB /* TuckMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuckMenuButton.swift; path = SlackUX/Views/TuckMenuButton.swift; sourceTree = "<group>"; };
 		F0EB7DC3A3FB88FA952E82E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 		D034FCAE1AE5B63A00B3EDD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D0B2ECB11AE98169000DD0C5 /* UserListCollectionViewCell.xib */,
 				D0B2ECAF1AE8BC57000DD0C5 /* ListCollectionViewCell.xib */,
 				D0B2ECAD1AE8A0F8000DD0C5 /* ListCollectionViewCell.swift */,
 				D034FCCC1AE60EE900B3EDD2 /* IBReusableView.swift */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02A6EAF1AE774EE00D88D31 /* ListViewController.xib in Resources */,
+				D0B2ECB21AE98169000DD0C5 /* UserListCollectionViewCell.xib in Resources */,
 				D0B2ECB01AE8BC57000DD0C5 /* ListCollectionViewCell.xib in Resources */,
 				D034FC941AE5B1C500B3EDD2 /* Main.storyboard in Resources */,
 				D034FC991AE5B1C500B3EDD2 /* LaunchScreen.xib in Resources */,
