@@ -1,0 +1,1 @@
+Experimenting with Slack iOS app's UX. Exploring design decisions, coming up with new ideas, and implementing solutions. This project is following a post about Slack UX on my website [EithanShavit.com](http://www.eithanshavit.com) 
